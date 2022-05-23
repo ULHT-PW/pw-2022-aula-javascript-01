@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Saudação</title>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+
+            document.querySelector('form').onsubmit = function () {
+                const name = document.querySelector('#name').value;
+                alert(`Olá, ${name}`);
+            }            
+        });
+
+    </script>
+
+</head>
+<body>
+    <form>
+        <input type="text" placeholder="insira o seu nome" id="name">
+        <input type="submit">
+    </form>
+</body>
+</html>

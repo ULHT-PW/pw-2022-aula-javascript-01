@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Olá</title>
+    <script>
+        function hello() {
+            const heading = document.querySelector('h1');
+            if (heading.innerHTML === 'Bom dia 😀!') {
+                heading.innerHTML = "Adeus! 😎";
+                heading.style.color = "green";
+            }
+            else {
+                heading.innerHTML = 'Bom dia 😀!';
+                heading.style.color = "black";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Bom dia 😀!</h1>
+    <button onclick="hello()">Clique aqui!</button>
+</body>
+
+</html>
